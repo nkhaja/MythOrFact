@@ -12,11 +12,13 @@ class Question: NSObject {
     var text: String
     var fact: Bool
     var category: String
+    var answer: String?
     
     
-    init(text:String, fact: Bool, category: String){
+    init(text:String, fact: Bool, category: String, answer:String){
         self.text = text
         self.fact = fact
         self.category = category
+        self.answer = answer
     }
 }
