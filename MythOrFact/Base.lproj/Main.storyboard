@@ -32,6 +32,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="firstCategoryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hec-rI-ADk"/>
                                     <segue destination="0ws-Cg-g6f" kind="show" id="nfF-Gv-n8v"/>
                                 </connections>
                             </button>
@@ -57,7 +58,8 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="0ws-Cg-g6f" kind="show" id="MYi-Jm-1Ee"/>
+                                    <action selector="secondCategoryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="04e-Cm-wdp"/>
+                                    <segue destination="0ws-Cg-g6f" kind="show" identifier="categoryButton" id="MYi-Jm-1Ee"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PHT-Is-kn7">
@@ -72,6 +74,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="thirdCategoryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sbn-VX-uOs"/>
                                     <segue destination="0ws-Cg-g6f" kind="show" id="Onj-JJ-vbT"/>
                                 </connections>
                             </button>
@@ -97,7 +100,8 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="0ws-Cg-g6f" kind="show" id="dw7-0b-icZ"/>
+                                    <action selector="fourthCategoryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VlA-nf-nRB"/>
+                                    <segue destination="0ws-Cg-g6f" kind="show" identifier="categoryButton" id="dw7-0b-icZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQf-ZV-4N5">
@@ -108,6 +112,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="randomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YnL-6a-PfY"/>
                                     <segue destination="0ws-Cg-g6f" kind="show" id="9eE-Ny-7Gg"/>
                                 </connections>
                             </button>
@@ -149,7 +154,7 @@
         <!--Myth or Fact?-->
         <scene sceneID="1RN-lq-btS">
             <objects>
-                <viewController id="0ws-Cg-g6f" customClass="GameViewController" sceneMemberID="viewController">
+                <viewController id="0ws-Cg-g6f" customClass="GameViewController" customModule="MythOrFact" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lz3-qF-79m"/>
                         <viewControllerLayoutGuide type="bottom" id="nRs-xn-BFf"/>
@@ -259,7 +264,6 @@
                     <navigationItem key="navigationItem" title="Myth or Fact?" id="igt-pO-JNG"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="factLabelTapped" destination="y41-zX-dqs" id="tsu-gJ-VPh"/>
                         <outlet property="heartImage" destination="FLb-SX-lDN" id="Coy-Fc-KeU"/>
                         <outlet property="livesLabel" destination="oZr-hd-L8p" id="VGA-c1-yYu"/>
                         <outlet property="questionTextLabel" destination="5Hc-nX-N6o" id="ofe-UN-WCW"/>
@@ -391,6 +395,6 @@
         <image name="Hearts-48" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nfF-Gv-n8v"/>
+        <segue reference="dw7-0b-icZ"/>
     </inferredMetricsTieBreakers>
 </document>

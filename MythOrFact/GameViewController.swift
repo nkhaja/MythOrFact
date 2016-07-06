@@ -29,6 +29,8 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         let questionBank = QuestionBank(category: selectedCategory)
         gameBoard = GameBoard(questions: questionBank.allQuestions)
         //gameBoard.questions = questionBank.allQuestions

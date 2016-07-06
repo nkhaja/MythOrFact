@@ -9,6 +9,8 @@
 import UIKit
 
 class CategoryViewController: UIViewController {
+    
+    var selectedCategory: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,9 +23,34 @@ class CategoryViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        <#code#>
+        if segue.identifier == "categoryButton" {
+            if let gameViewController = segue.destinationViewController as? GameViewController {
+                gameViewController.selectedCategory = selectedCategory
+            }
+        }
+
+    }
+    
+    
+    @IBAction func firstCategoryButton(sender: UIButton) {
+        selectedCategory = "cat1"
+        performSegueWithIdentifier("categoryButton", sender: sender)
+    }
+    
+    
+    @IBAction func secondCategoryButton(sender: UIButton) {
+    }
+    
+    
+    @IBAction func thirdCategoryButton(sender: UIButton) {
     }
 
-
+    @IBAction func fourthCategoryButton(sender: UIButton) {
+    }
+    
+    
+    @IBAction func randomButton(sender: UIButton) {
+    }
+    
+    
 }
-
