@@ -24,8 +24,8 @@ class CategoryViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "categoryButton" {
-            if let gameViewController = segue.destinationViewController as? GameViewController {
-                gameViewController.selectedCategory = selectedCategory
+            if let GamesViewController = segue.destinationViewController as? GamesViewController {
+                GamesViewController.selectedCategory = selectedCategory
             }
         }
 
