@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8BE35C9A9F3EC4FCB3358E9F /* Pods_MythOrFact.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF55B4B8A90EEFB4C211C08 /* Pods_MythOrFact.framework */; };
 		BD654FA41D2C597200D34FE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD654FA31D2C597200D34FE7 /* AppDelegate.swift */; };
 		BD654FA61D2C597200D34FE7 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD654FA51D2C597200D34FE7 /* CategoryViewController.swift */; };
 		BD654FA91D2C597200D34FE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD654FA71D2C597200D34FE7 /* Main.storyboard */; };
@@ -20,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FF55B4B8A90EEFB4C211C08 /* Pods_MythOrFact.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MythOrFact.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F4199FE4DF1A86101F3EA7D /* Pods-MythOrFact.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MythOrFact.release.xcconfig"; path = "Pods/Target Support Files/Pods-MythOrFact/Pods-MythOrFact.release.xcconfig"; sourceTree = "<group>"; };
+		8BC08BF6FFFD10460CF4F2B1 /* Pods-MythOrFact.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MythOrFact.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MythOrFact/Pods-MythOrFact.debug.xcconfig"; sourceTree = "<group>"; };
 		BD654FA01D2C597200D34FE7 /* MythOrFact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MythOrFact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD654FA31D2C597200D34FE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD654FA51D2C597200D34FE7 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
@@ -39,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BE35C9A9F3EC4FCB3358E9F /* Pods_MythOrFact.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		114738BC35DE9446C7D744C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FF55B4B8A90EEFB4C211C08 /* Pods_MythOrFact.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9DD435F184AA5432666C45AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BC08BF6FFFD10460CF4F2B1 /* Pods-MythOrFact.debug.xcconfig */,
+				4F4199FE4DF1A86101F3EA7D /* Pods-MythOrFact.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BD654F971D2C597200D34FE7 = {
 			isa = PBXGroup;
 			children = (
 				BD654FA21D2C597200D34FE7 /* MythOrFact */,
 				BD654FA11D2C597200D34FE7 /* Products */,
+				9DD435F184AA5432666C45AD /* Pods */,
+				114738BC35DE9446C7D744C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,9 +118,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD654FB21D2C597200D34FE7 /* Build configuration list for PBXNativeTarget "MythOrFact" */;
 			buildPhases = (
+				D83C3D4FB05A01852EC043AE /* [CP] Check Pods Manifest.lock */,
 				BD654F9C1D2C597200D34FE7 /* Sources */,
 				BD654F9D1D2C597200D34FE7 /* Frameworks */,
 				BD654F9E1D2C597200D34FE7 /* Resources */,
+				785AAB6988EEC9A9848EE010 /* [CP] Embed Pods Frameworks */,
+				AB0EE29437FA2A2C634DC165 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -153,6 +180,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		785AAB6988EEC9A9848EE010 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MythOrFact/Pods-MythOrFact-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB0EE29437FA2A2C634DC165 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MythOrFact/Pods-MythOrFact-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D83C3D4FB05A01852EC043AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BD654F9C1D2C597200D34FE7 /* Sources */ = {
@@ -275,6 +350,7 @@
 		};
 		BD654FB31D2C597200D34FE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BC08BF6FFFD10460CF4F2B1 /* Pods-MythOrFact.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MythOrFact/Info.plist;
@@ -286,6 +362,7 @@
 		};
 		BD654FB41D2C597200D34FE7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F4199FE4DF1A86101F3EA7D /* Pods-MythOrFact.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MythOrFact/Info.plist;
